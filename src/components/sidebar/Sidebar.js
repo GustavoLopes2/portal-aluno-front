@@ -77,10 +77,6 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                     <i><FaArrowAltCircleLeft size={25}/></i>
                     <a href= "#">Log out</a>
                 </div>
-                <div className="sidebar__logout">
-                    <i><FaArrowAltCircleLeft size={25}/></i>
-                    <a href= "#">Log out</a>
-                </div>
             </div>
         </div>
     )
