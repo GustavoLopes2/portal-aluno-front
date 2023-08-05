@@ -12,7 +12,7 @@ body {
   .main-login {
     width: 100vw;
     height: 100vh;
-    background: url('https://media.discordapp.net/attachments/1128797269513228328/1137261202242809886/loginBG.png?width=1027&height=578') no-repeat;
+    background: url('https://images.unsplash.com/photo-1644035656974-9f979761e6a1?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1632&q=80') no-repeat;
     background-size: cover;
     background-position: center;
     display: flex;

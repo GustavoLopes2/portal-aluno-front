@@ -31,7 +31,7 @@ function RegisterScreen() {
               headers: { 'Content-Type': 'application/json'}
             }
           );
-          if(response.status == 200) {
+          if(response.status === 200) {
             setError('Registrado com sucesso!'); 
             window.location.href = 'http://localhost:3000/'
           }
@@ -39,7 +39,7 @@ function RegisterScreen() {
             if (error.response) {
             setError('Insira os valores válidos');
           }  
-            if (password != confirmedPassword | confirmedPassword != password) {
+            if (password !== confirmedPassword | confirmedPassword !== password) {
             setError('senhas incorretas'); 
           }
         }
@@ -131,7 +131,6 @@ function RegisterScreen() {
                         <a className="referenceURL" href="loginScreen2.html">
                             <button className="btn-voltar" id="voltar">Voltar</button>
                         </a>
-                    
                     </div>
                 </div>
             </div>
