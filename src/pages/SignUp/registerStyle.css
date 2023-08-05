@@ -1,0 +1,141 @@
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body * {
+    box-sizing: border-box;
+}
+
+.main-register {
+    width: 100vw;
+    height: 100vh;
+    background: #cee4eb;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-register {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.left-register>h1 {
+    font-size: 4vw;
+    color: black;
+}
+
+.right-register {
+    width: 50vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left-register-image {
+    width: 35vw;
+}
+
+.card-register {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 30px 35px;
+    background: #6c7577;
+    border-radius: 20px;
+    box-shadow: 0px 10px 40px #d8945d;
+}
+
+.card-register>h1 {
+    color: black;
+    font-weight: 800;
+    margin: 0;
+}
+
+.textfield {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    margin: 10px 0px;
+}
+
+.textfield>input {
+    width: 100%;
+    border: none;
+    border-radius: 10px;
+    padding: 15px;
+    background: white;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 13pt;
+    outline: none;
+    box-shadow: 0px 10px 40px #8d8d8d;
+    box-sizing: border-box;
+}
+
+.textfield>label {
+    color: black;
+    margin-bottom: 10px;
+}
+
+.textfield>input::placeholder {
+    color: #55575794
+}
+
+.btn-enviar {
+    width: 100%;
+    padding: 16px 0px;
+    margin: 10px;
+    border: none;
+    border-radius: 8px;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: #d37742;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #b6b5b5;
+}
+
+.referenceURL {
+    width: 100%;
+
+}
+.btn-voltar {
+    width: 100%;
+    padding: 16px 0px;
+    border-radius: 8px;
+    margin: none;
+    border: none;
+    outline: none;
+    text-transform: uppercase;
+    font-weight: 800;
+    letter-spacing: 2px;
+    background: #d37742;
+    color: black;
+    cursor: pointer;
+    box-shadow: 0px 10px 40px -12px #b6b5b5;
+}
+
+
+#enviar:hover,
+#voltar:hover {
+    background-image: linear-gradient(to right, rgb(255, 255, 255), rgb(161, 161, 161));
+}
+
+@media only screen and (max-width: 950px) {
+    .card-register {
+        width: 85%;
+    }
+}

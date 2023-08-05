@@ -1,6 +1,5 @@
 import './Sidebar.css';
 import logo from '../../assets/logo.jpg';
-import unifatecielogo from '../../assets/unifatecie_logo.png';
 import {FaHouseUser, FaGraduationCap, FaBookOpen, FaLandmark, FaFileDownload, FaRegClock, FaCommentDots, FaReceipt, FaArrowAltCircleLeft, FaUserTie, FaUserGraduate,
 FaUserShield, FaUserAlt, FaPaperPlane } from 'react-icons/fa';
 
@@ -21,7 +20,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             <div className="sidebar__menu">
                 <div className="sidebar__link active_menu_link">
                     <i><FaHouseUser size={25}/></i>
-                    <a href= "#">Home</a>
+                    <a href= "HomePage">Home</a>
                 </div>
                 <h2>ADMIN</h2>
                 <div className="sidebar__link">
@@ -34,11 +33,15 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 </div>
                 <div className="sidebar__link">
                     <i><FaLandmark size={25}/></i>
-                    <a href= "#">Classes</a>
+                    <a href= "Classes">Classes</a>
                 </div>
                 <div className="sidebar__link">
                     <i><FaFileDownload size={25}/></i>
-                    <a href= "#">Comprovante de Matrícula</a>
+                    <a 
+                    component="a"
+                    href= "ComprovanteDeMatricula">
+                        Comprovante de Matrícula
+                    </a>
                 </div>
                 <div className="sidebar__link">
                     <i><FaRegClock size={25}/></i>
@@ -75,7 +78,9 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 </div>
                 <div className="sidebar__logout">
                     <i><FaArrowAltCircleLeft size={25}/></i>
-                    <a href= "#">Log out</a>
+                    <a href= "LoginScreen">
+                        Log out
+                    </a>
                 </div>
             </div>
         </div>
