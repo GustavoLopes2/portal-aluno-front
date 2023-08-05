@@ -20,7 +20,7 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
             <div className="sidebar__menu">
                 <div className="sidebar__link active_menu_link">
                     <i><FaHouseUser size={25}/></i>
-                    <a href= "HomePage">Home</a>
+                    <a href= "Home">Home</a>
                 </div>
                 <h2>ADMIN</h2>
                 <div className="sidebar__link">
@@ -33,13 +33,13 @@ const Sidebar = ({ sidebarOpen, closeSidebar }) => {
                 </div>
                 <div className="sidebar__link">
                     <i><FaLandmark size={25}/></i>
-                    <a href= "Classes">Classes</a>
+                    <a href= "#">Classes</a>
                 </div>
                 <div className="sidebar__link">
                     <i><FaFileDownload size={25}/></i>
                     <a 
                     component="a"
-                    href= "ComprovanteDeMatricula">
+                    href= "#">
                         Comprovante de Matrícula
                     </a>
                 </div>

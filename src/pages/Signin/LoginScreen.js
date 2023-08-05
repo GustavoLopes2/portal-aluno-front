@@ -1,5 +1,6 @@
 import axios from "axios";
 import { useState } from "react";
+import { Redirect } from 'react-router-dom';
 import './LoginStyle.css';
    
 function LoginScreen() {
@@ -9,11 +10,12 @@ function LoginScreen() {
     const [password, setPassword] = useState('');
     const [error, setError] = useState('');
 
+    function Register(e) {
+      window.location.href = 'http://localhost:3000/Cadastrar'
+    }
+
     const handleLogin = async (e) => {
         e.preventDefault();
-        
-        console.log(email, password);
-        
         try {
           const response = await axios.post('http://localhost:8080/v1/auth/authenticate',
             JSON.stringify({email, password}),
@@ -21,6 +23,11 @@ function LoginScreen() {
               headers: { 'Content-Type': 'application/json'}
             }
           );
+
+          if(response.status == 200) {
+            window.location.href = 'http://localhost:3000/Home'
+          }
+
         } catch (error) {
           if (error.response) {
             setError('Usuario ou senha invalidos');
@@ -61,7 +68,7 @@ function LoginScreen() {
                 <p>{error}</p>
                 <button type="submit" className="btn-login"
                 onClick={(e) => handleLogin(e)} id="login">Login</button>
-                <button type="submit" className="btn-register" id="register"
+                <button type="submit" className="btn-register" id="register" onClick={(e) => Register(e)}
                 >Registrar-se</button>
             </div>
           </div>

@@ -15,9 +15,9 @@ const Root = () => {
       <Router>
         <Switch>
             <Route path="/ComprovanteDeMatricula" component={ProofOfEnrollment} />
-            <Route path="/LoginScreen" component={LoginScreen} />
+            <Route path="/Home" component={App} />
             <Route path="/Cadastrar" component={RegisterScreen} />
-            <Route path="/" component={App} />
+            <Route path="/" component={LoginScreen} />
         </Switch>
       </Router>
     );

@@ -10,9 +10,7 @@ const Navbar = ({ sidebarOpen, openSidebar}) => {
             </div>
 
             <div className="navbar__left">
-                <a href="#">Matérias</a>
-                <a href="#">Boletim</a>
-                <a href="#" className="active_link">Comprovante de Matrícula</a>
+                <a href="#" className="active_link">Home</a>
             </div>
 
             <div className="navbar__right">

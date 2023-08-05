@@ -1,5 +1,5 @@
 import Chart from '../charts/Chart';
-import unifatecielogo from '../../assets/unifatecie_logo.png';
+import unifatecielogo from '../../assets/unifatecieLogo.png';
 import { FaMoneyBillWave, FaRegClock, FaUser } from 'react-icons/fa';
 
 import './Main.css';

@@ -2,7 +2,6 @@ import './registerStyle.css';
 import axios from "axios";
 import { useState } from "react";
 
-
 function RegisterScreen() {
 
     //autenticacao de login
@@ -18,9 +17,6 @@ function RegisterScreen() {
 
     const handleLogin = async (e) => {
         e.preventDefault();
-        
-        console.log(name, email, password, cpf, rg, birthDate, enrollmentCode);
-        
         try {
           const response = await axios.post('http://localhost:8080/v1/auth/register/student',
             JSON.stringify({"name": name, 
@@ -35,6 +31,10 @@ function RegisterScreen() {
               headers: { 'Content-Type': 'application/json'}
             }
           );
+          if(response.status == 200) {
+            setError('Registrado com sucesso!'); 
+            window.location.href = 'http://localhost:3000/'
+          }
         } catch (error) {
             if (error.response) {
             setError('Insira os valores válidos');
@@ -42,9 +42,6 @@ function RegisterScreen() {
             if (password != confirmedPassword | confirmedPassword != password) {
             setError('senhas incorretas'); 
           }
-          if (error.response.status == 200) {
-            setError('Registrado com sucesso!'); 
-        }
         }
 
     };
